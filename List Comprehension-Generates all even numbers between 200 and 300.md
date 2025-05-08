@@ -20,8 +20,33 @@ To write a Python class-based program that generates all even numbers between 20
 ---
 
 ## 💻 PROGRAM:
-Add Code Here
+```
+def create_matrix(n,m): 
+M = []
+for i in range(n): 
+row = []
+for j in range(m): 
+   x = int(input()) 
+   row.append(x)
+   M.append(row) 
+   return M
+r,c = input().split()
+A = create_matrix(int(r),int(c))
+B = create_matrix(int(r),int(c))
+C = []
+for i in range(int(r)): 
+   R = []
+for j in range(int(c)): 
+   item = A[i][j]-B[i][j] 
+R.append(item)
+C.append(R) 
+print(A) 
+print(B) 
+print(C)
 
+```
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/ef8272fe-4ad3-42fa-b78a-2ce5d43ce9d2)
 
 ## RESULT:
+Thus, the given program is implemented and executed successfully.
